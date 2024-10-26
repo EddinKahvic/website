@@ -1,0 +1,39 @@
+.Navbar {
+  background-color: #111;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+  font-family: 'FF Mark W05', Arial, sans-serif;
+  font-size: 14px !important;
+  font-weight: bold;
+  height: 80px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  display: flex;
+  width: 100%;
+}
+
+.Navbar-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 36px;
+}
+
+.Navbar-left-content-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+}
+
+.Navbar-left-content-logo {
+  position: relative;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(2%)
+    hue-rotate(81deg) brightness(105%) contrast(100%);
+}
+
+.Navbar-left-content-icons:hover .Navbar-left-content-arrow,
+.Navbar-left-content-icons:hover .Navbar-left-content-logo {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(79%) saturate(2914%)
+    hue-rotate(343deg) brightness(87%) contrast(110%);
+}
