@@ -1,0 +1,96 @@
+.Navbar {
+  background-color: #111;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+  font-family: 'FF Mark W05', Arial, sans-serif;
+  font-size: 14px !important;
+  font-weight: bold;
+  height: 80px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  display: flex;
+  width: 100%;
+}
+
+.Navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 36px;
+}
+
+.Navbar-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+}
+
+.Navbar-left-logo {
+  position: relative;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(2%)
+    hue-rotate(81deg) brightness(105%) contrast(100%);
+}
+
+.Navbar-left-content:hover {
+  cursor: pointer;
+}
+
+.Navbar-left-content:hover .Navbar-left-arrow,
+.Navbar-left-content:hover .Navbar-left-logo {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(79%) saturate(2914%)
+    hue-rotate(343deg) brightness(87%) contrast(110%);
+}
+
+.Navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Navbar-center-logo {
+  margin-left: 22px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.Navbar-center-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 1;
+  margin-left: 18px;
+  transition: opacity ease 0.3s;
+  width: 100%;
+  height: 80px;
+}
+
+.Navbar-center-items button {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 66px;
+  color: #f9f9f9;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.08em;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98),
+    border-color 0.5s cubic-bezier(0.06, 0.81, 0, 0.98);
+  text-decoration: none;
+}
