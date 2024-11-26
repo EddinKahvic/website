@@ -35,7 +35,12 @@ function Navbar() {
           </div>
           <div className="Navbar-center-items">
             {items.map((item) => (
-              <button key={item}>{item}</button>
+              <div className="Navbar-center-item">
+                <a key={item} href={item}>
+                  <p>{item}</p>
+                  <div className="Navbar-center-item-underline"></div>
+                </a>
+              </div>
             ))}
           </div>
         </div>
