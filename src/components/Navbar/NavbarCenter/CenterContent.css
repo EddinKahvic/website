@@ -1,0 +1,90 @@
+.Navbar-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Navbar-center-logo {
+  margin-left: 22px;
+}
+
+img:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.Navbar-center-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 24px;
+  width: 100%;
+  height: 80px;
+}
+
+.Navbar-center-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Navbar-center-items a {
+  display: flex;
+  margin: auto;
+  background-color: transparent;
+  border: 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 66px;
+  color: #f9f9f9;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.08em;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.Navbar-center-item p {
+  display: flex;
+  align-items: center;
+  padding: 7.5px 16px;
+  margin: 0;
+  cursor: pointer;
+  margin: auto;
+  transition: color 0.15s ease-in-out;
+  gap: 4px;
+  margin-right: 4px;
+}
+
+.Navbar-center-item:hover p {
+  color: #c8aa6e;
+  background-color: rgba(128, 128, 128, 0.358);
+  border-radius: 0.4rem;
+}
+
+.Navbar-center-item p svg {
+  color: white;
+}
+
+.Navbar-center-item p svg {
+  opacity: 0.5;
+}
+
+.Navbar-center-item:hover p svg {
+  opacity: 1;
+}
+
+.Navbar-center-item-underline {
+  display: flex;
+  visibility: hidden;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(0, 160, 186);
+  border-radius: 2px;
+}
+
+.Navbar-center-item:hover .Navbar-center-item-underline {
+  visibility: visible;
+}

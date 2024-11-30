@@ -1,0 +1,23 @@
+.Navbar-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding-left: 36px;
+}
+
+.Navbar-left-logo {
+  position: relative;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(2%)
+    hue-rotate(81deg) brightness(105%) contrast(100%);
+}
+
+.Navbar-left-content:hover {
+  cursor: pointer;
+}
+
+.Navbar-left-content:hover .Navbar-left-arrow,
+.Navbar-left-content:hover .Navbar-left-logo {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(79%) saturate(2914%)
+    hue-rotate(343deg) brightness(87%) contrast(110%);
+}
