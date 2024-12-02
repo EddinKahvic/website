@@ -9,11 +9,39 @@ svg {
   color: white;
 }
 
-button[type='submit'] {
+input[type='text'] {
+  background-color: transparent;
+  padding: 0;
+  border-style: hidden;
+  outline: none;
+  width: 25px;
+  height: 40px;
+  transition: width ease 1s;
+  text-indent: 40px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #f9f9f9;
+  display: none;
+}
+
+input[type='submit'] {
   width: 0;
   border: 0;
   padding: 0;
-  background-color: transparent;
-  background-image: none;
+  cursor: pointer;
+}
+
+.Navbar-right-search-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.358);
+  transition: background-color 0.1s ease-in-out;
+  border-radius: 1rem;
+  padding: 4px 7px;
+}
+
+.Navbar-right-search-icon {
+  margin-top: 3px;
   cursor: pointer;
 }
