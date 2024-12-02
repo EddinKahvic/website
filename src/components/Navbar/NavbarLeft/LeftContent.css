@@ -1,15 +1,22 @@
 .Navbar-left-content {
   display: flex;
+  flex: 0;
   align-items: center;
   justify-content: center;
-  margin: 0%;
+  margin: 0;
   padding-left: 36px;
+  gap: 4px;
 }
 
 .Navbar-left-logo {
   position: relative;
   filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(2%)
     hue-rotate(81deg) brightness(105%) contrast(100%);
+}
+
+.Navbar-left-arrow {
+  color: white;
+  opacity: 0.5;
 }
 
 .Navbar-left-content:hover {
@@ -20,4 +27,5 @@
 .Navbar-left-content:hover .Navbar-left-logo {
   filter: brightness(0) saturate(100%) invert(31%) sepia(79%) saturate(2914%)
     hue-rotate(343deg) brightness(87%) contrast(110%);
+  opacity: 1;
 }

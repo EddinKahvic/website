@@ -6,7 +6,6 @@ export default function RiotGamesLogo() {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
-      viewBox="10 10 10 10"
       width="85px"
       height="27px"
     >

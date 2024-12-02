@@ -18,7 +18,12 @@ function CenterContent() {
   return (
     <div className="Navbar-center-content">
       <div className="Navbar-center-logo">
-        <img src={logo} alt="League of Legends logo" width="27px" />
+        <img
+          src={logo}
+          alt="League of Legends logo"
+          width="24px"
+          height="26px"
+        />
       </div>
       <div className="Navbar-center-items">
         {items.map((item) => (
