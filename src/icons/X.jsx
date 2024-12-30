@@ -4,8 +4,8 @@ export default function X() {
   return (
     <svg
       fill="currentColor"
-      height="20"
-      width="20"
+      height="15"
+      width="15"
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import MagnifyingGlass from '../../../icons/MagnifyingGlass'
+import X from '../../../icons/X'
 import './RightContent.css'
 
 function RightContent() {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [text, setText] = useState('')
 
-  //Toggles state values based on previous state
-  const toggleExpand = () => {
+  const toggleExpanded = () => {
+    //Toggles state values based on previous state
     setIsExpanded((previous) => !previous)
   }
 
@@ -21,29 +23,40 @@ function RightContent() {
               transition: 'width 1s ease-out',
             }}
           >
-            <div className="Navbar-right-search-icon">
-              <button
-                type="button"
-                className="Navbar-right-search-button"
-                onClick={() => {
-                  toggleExpand()
-                }}
-              >
-                <MagnifyingGlass />
-              </button>
-
-              {/* <button type="reset">
-                <X />
-              </button> */}
-            </div>
+            <button
+              type="button"
+              className="Navbar-right-search-button"
+              onClick={() => {
+                toggleExpanded()
+              }}
+            >
+              <MagnifyingGlass />
+            </button>
             <input
               type="text"
-              defaultValue=""
+              value={text}
+              onChange={(e) => setText(e.target.value)}
               style={{
                 width: isExpanded ? '100%' : '0%',
                 transition: 'width 1s ease-out',
               }}
             />
+
+            <button
+              type="reset"
+              className="Navbar-right-x-button"
+              onClick={() => {
+                //If there is input text delete it, else toggleExpanded
+                text.trim() !== '' ? setText('') : toggleExpanded()
+              }}
+              style={{
+                opacity: isExpanded ? 0.5 : 0,
+                transition: 'opacity 1s ease',
+                visibility: isExpanded ? 'visible' : 'hidden',
+              }}
+            >
+              <X />
+            </button>
           </div>
         </form>
       </div>
