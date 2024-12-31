@@ -58,6 +58,59 @@ input[type='text'] {
   padding: 4px 8px;
 }
 
-.Navbar-right-search-input-container.expanded {
-  width: 200%;
+.Navbar-right-globe {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Navbar-right-globe-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 0.5rem;
+}
+
+.Navbar-right-globe-icon:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.358);
+}
+
+.Navbar-right-globe-icon svg {
+  fill: #111;
+  color: white;
+}
+
+.Navbar-right-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Navbar-right-username-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 16px;
+  padding-right: 19px;
+  background-color: rgba(128, 128, 128, 0.358);
+  border-radius: 0.5rem;
+}
+
+.Navbar-right-username-container p {
+  margin: 8px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #f9f9f9;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 120%;
+  position: relative;
+}
+
+.Navbar-right-username-container svg {
+  opacity: 0.5;
 }

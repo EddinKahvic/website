@@ -51,7 +51,6 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 7.5px 16px;
-  margin: 0;
   cursor: pointer;
   margin: auto;
   transition: color 0.15s ease-in-out;

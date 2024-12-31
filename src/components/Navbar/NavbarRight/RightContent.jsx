@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import MagnifyingGlass from '../../../icons/MagnifyingGlass'
 import X from '../../../icons/X'
+import Globe from '../../../icons/Globe'
+import TriangleDown from '../../../icons/TriangleDown'
 import './RightContent.css'
 
 function RightContent() {
@@ -59,6 +61,17 @@ function RightContent() {
             </button>
           </div>
         </form>
+      </div>
+      <div className="Navbar-right-globe">
+        <div className="Navbar-right-globe-icon">
+          <Globe />
+        </div>
+      </div>
+      <div className="Navbar-right-account">
+        <div className="Navbar-right-username-container">
+          <p>Username</p>
+          <TriangleDown></TriangleDown>
+        </div>
       </div>
     </div>
   )
